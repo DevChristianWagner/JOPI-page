@@ -782,7 +782,7 @@ form h2 {
     font-size: 21px;
 }
 
-form div {
+form div label {
     display: flex;
     align-items: flex-start;
     max-width: 350px;
@@ -803,13 +803,13 @@ form input::placeholder {
     padding-left: 10px;
 }
 
-form div input {
+form div label input {
     margin: 0;
     width: 30px;
     margin: 0 10px 0 10px;
 }
 
-form div p {
+form div label p {
     margin: 0;
 }
 
@@ -826,7 +826,7 @@ form input[type="submit"] {
 }
 
 form::before {
-    content: url(../imgs/form-image.png);
+    content: url(../imgs/form-image.webp);
     width: 330px;
     position: absolute;
     
