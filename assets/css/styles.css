@@ -63,16 +63,20 @@ header {
     padding-bottom: 50px;
     padding: 0 20px;
     background-image: url(../imgs/header-bg.avif);
+    background-size: contain;
+    
 }
+
 
 header ul {
     display: flex;
     list-style: none;
-    padding: 0;
+    padding: 10px;
+    margin: 16px;
 }
 
 header li {
-    margin: 10px 20px;
+    margin: 0 20px;
 }
 
 header li a {
@@ -129,8 +133,8 @@ header::after {
 header .grid-2 img {
     z-index: 999;
     position: relative;
-    margin-top: -50px;
-    margin-bottom: 30px;
+    margin-top: -30px;
+    margin-bottom: 100px;
     width: 500px;
     max-width: 500px;
 }
@@ -161,6 +165,9 @@ header .grid-2 img {
         clip-path: circle(30% at right);
         z-index: 1;
     }
+
+
+
 }
 
 @media (min-width: 1750px) {
@@ -174,6 +181,10 @@ header .grid-2 img {
         background: var(--primary-linear);
         clip-path: circle(30% at right);
         z-index: 1;
+    }
+
+    header img.float {
+        height: auto;   
     }
 }
 
@@ -872,8 +883,6 @@ footer .footer-container div img {
 }
 
 /* Animation */
-
-
 
 @keyframes float {
     0% {
